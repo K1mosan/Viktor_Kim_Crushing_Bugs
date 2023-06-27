@@ -28,7 +28,7 @@ body {
 	margin: 0 auto;
 }
 
-.puzzle-pieces, .puzzle-board, .puzzle-board2, .puzzle-board3, .puzzle-board4 {
+.puzzle-pieces, .puzzle-board {
 	margin-top: 40px;
 	height: 400px;
 	border: medium solid #333;
