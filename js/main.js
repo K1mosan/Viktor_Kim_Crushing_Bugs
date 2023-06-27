@@ -8,11 +8,11 @@ const theButtons = document.querySelectorAll("#buttonHolder img"),
 
 let draggedPiece;
 
+//functions
 function changeBGImage() {
   const backgroundID = this.id;
   puzzleBoard.style.backgroundImage = `url(images/backGround${backgroundID}.jpg)`;
 
-  // Reset puzzle by removing dropped pieces from drop zones
   dropZones.forEach((zone) => {
     if (zone.firstChild) {
       const piece = zone.firstChild;
@@ -51,7 +51,6 @@ function handleDrop(e) {
 }
 
 function resetPuzzle() {
-  // Reset puzzle by reparenting the puzzle pieces to the puzzlePiecesDiv
   puzzlePieces.forEach((piece) => {
     piece.classList.remove("dropped");
     piece.parentNode.removeChild(piece);
